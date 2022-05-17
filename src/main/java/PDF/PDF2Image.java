@@ -37,7 +37,6 @@ public class PDF2Image {
             PDDocument document = PDDocument.load(new File(this.filename));
             PDFRenderer pdfRenderer = new PDFRenderer(document);
             String dir_name = getDir();
-            System.out.println("GET DIR = " + dir_name);
             for (int page = 0; page < document.getNumberOfPages(); ++page) {
                 String name = String.format("%s%d.jpg", dir_name, page + 1);
                 System.out.println(name);
