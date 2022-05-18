@@ -45,7 +45,7 @@ public class PDF2Image {
                 ImageIOUtil.writeImage(bim, name, 300);
             }
             document.close();
-        } catch (Exception ignored) {
+        } catch (Exception e) {
             System.out.println("Conversion error PFD to Image");
         }
     }
@@ -53,7 +53,7 @@ public class PDF2Image {
     public int getSize() {
         try (PDDocument document = PDDocument.load(new File(this.filename))) {
             return document.getNumberOfPages();
-        } catch (IOException ignored) {
+        } catch (Exception e) {
             return 0;
         }
     }

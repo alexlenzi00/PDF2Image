@@ -13,11 +13,9 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 
-    // 2022-05-16
+    // APACHE PDFBOX
     implementation 'org.apache.pdfbox:pdfbox:2.0.26'
     implementation 'org.apache.pdfbox:pdfbox-tools:2.0.26'
-    implementation 'net.sf.cssbox:pdf2dom:2.0.1'
-
 }
 
 test {
