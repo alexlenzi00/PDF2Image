@@ -24,12 +24,13 @@ public class PDF2Image {
         s.add(System.getProperty("user.home"));
         s.add(".NAME_GESTIONALE");
         if (new File(s.toString()).mkdirs()) {
-            s.add(fname);
+            System.out.printf("Directory %s created...\n", s);
         }
+        s.add(fname);
         if (new File(s.toString()).mkdirs()) {
-            return s.toString();
+            System.out.printf("Directory %s created...\n", s);
         }
-        return "";
+        return s.toString();
     }
 
     private void convert() {
